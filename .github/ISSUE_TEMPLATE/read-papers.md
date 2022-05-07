@@ -7,24 +7,24 @@ assignees: Shinnosuke-Hara-8642
 
 ---
 
-###Title
+### Title
 
-###Authur
+### Authur
 
-###Motivation
+### Motivation
 
-###Method
+### Method
 
-###Insight
+### Insight
 
-###Contribution
+### Contribution
 
 ***
 
-###Keyword
+### Keyword
 
-###Unknown
+### Unknown
 
-###Reflection
+### Reflection
 
-###Reference
+### Reference
