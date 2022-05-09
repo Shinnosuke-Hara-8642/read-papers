@@ -1,0 +1,197 @@
+
+==== サーベイ論文 ====
+^ タイトル ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|A Survey on Shape Correspondence}} | [[https://doi.org/10.1111/j.1467-8659.2011.01884.x|doi]] | {{:bib:kaick_cgf2011.bib|bib}} | CGF2011 | 対応点マッチングのサーベイ |
+| {{|Object Tracking: A Survey}} | [[https://doi.org/10.1145/1177352.1177355|doi]] | {{:bib:yilmaz_csur2006.bib|bib}} | CSUR2006 | トラッキングのサーベイ |
+| {{|Optical flow modeling and computation: a survey}} | doi | bib | CVIU2015 | オプティカルフローのサーベイ。6章のocclusionに関しては必見 |
+
+
+| {{|SC-FEGAN: Face Editing Generative Adversarial Network with User's Sketch and Color}} | Y. Jo | [[https://arxiv.org/abs/1902.06838|doi]] | bib | arXiv2019 | 画像編集のGAN\\ 指定した形状での生成ができるようになりそう\\ [[https://kapu-kapu.hatenablog.com/entry/2019/03/03/160438|参考]] |
+| {{|Fashion Editing with Multi-scale Attention Normalization}} | H. Dong | [[https://arxiv.org/abs/1906.00884|arxiv]] | bib | arXiv 2019 | スケッチ・マスク・塗りからファッションを変更した全身画像を生成 |
+| {{|Free-Form Image Inpainting with Gated Convolution}} | J. Yu | [[https://arxiv.org/abs/1806.03589|doi]] | bib | arXiv2018 | 形状変形に使えるGated Convolutionの提案 |
+| {{|VITON: An Image-Based Virtual Try-on Network}} | X. Han | [[https://doi.org/10.1109/CVPR.2018.00787|doi]] | bib | CVPR2018 | ファッションのきせかえ\\ thin plate spline transformationによるメッシュ変形 |
+| {{|Shape Matching and Object Recognition Using Shape Contexts}} | S. Belongie | [[https://doi.org/10.1109/34.993558|doi]] | bib | TPAMI2002 | メッシュ変形(thin plate spline transformation: TPS) |
+| {{|Spatial Transformer Networks}} | M. Jaderberg | [[https://papers.nips.cc/paper/5854-spatial-transformer-networks|nips]] | bib | NIPS2015 | Spatial TransformerもTPS変形 |
+| VITON-GAN: Virtual Try-on Image Generator Trained with Adversarial Loss | S. Honda | [[https://doi.org/10.2312/egp.20191043|doi]] | bib | Eurographics2019 | 全身画像着せ替えGAN |
+| {{|ImageNet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness}} | R. Geirhos | [[https://arxiv.org/abs/1811.12231|doi]] | bib | ICLR2019 | SIN．テクスチャ情報と形状情報の重要性\\ ImageNetをスタイル変換させて形状認識を無理やりさせる\\ Shape-ResNet |
+| {{|InstaGAN: Instance-aware Image-to-Image Translation}} | S. Mo | [[https://arxiv.org/abs/1812.10889|doi]] | bib | ICLR2019 | 画像中の物体をインスタンスセグメンテーションで認識した上でのドメイン変換GAN．\\ 形状変換にも使えそう． |
+| {{|TransGaGa: Geometry-Aware Unsupervised Image-to-Image Translation}} | W. Wu | [[https://arxiv.org/abs/1904.09571|doi]] | bib | CVPR2019 | 構造を条件付けた画像生成．ドメイン変換も簡単にできてしまう |
+| {{|Few-Shot Adversarial Learning of Realistic Neural Talking Head Models}} | Zakharov | doi | bib | arxiv2019 | サムスン．小数画像から顔アニメーションの生成．顔輪郭を使う． |
+| Mask Embedding in conditional GAN for Guided Synthesis of High Resolution Images | author | [[https://arxiv.org/abs/1907.01710|arxiv]] | bib | pub | エッジを強化した画像生成 |
+
+==== あとで読む ====
+  * [[https://shiropen.com/seamless/automatic-unpaired-shape-deformation-transfer]]
+  * Curve-GCN，アノテーション用ポリゴン作成
+
+{{|最新の人物画像生成}} [[http://openaccess.thecvf.com/content_CVPRW_2019/papers/Augmented%20Human%20Human-centric%20Understanding%20and%202D-3D%20Synthesis/Chen_Unpaired_Pose_Guided_Human_Image_Generation_CVPRW_2019_paper.pdf|CVPRW2019 VUHCS workshop]]
+
+
+==== セグメンテーション ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|PointRend: Image Segmentation as Rendering}} | Kirillov | doi | bib | arxiv2019.12 | facebook, レンダリングベースの手法で境界の不明瞭な部分を再帰的に推定して高解像度なセグメンテーションを可能にする。[[https://github.com/facebookresearch/detectron2/tree/master/projects/PointRend|code]] |
+| {{|Deep Learning Markov Random Field for Semantic Segmentation}} | Z. Liu | [[https://dx.doi.org/10.1109/TPAMI.2017.2737535|doi]] | bib | TPAMI2017 | セグメンテーションをディープラーニングとグラフカットでやる |
+| {{|Boosting Semantic Human Matting with Coarse Annotations}} | J. Liu | doi | bib | pub | 前景背景のアルファマップ生成SoTA? |
+| {{|Background Matting: The World is Your Green Screen}} | Sengupta | doi | bib | CVPR2020 | 背景を消す |
+| {{|SOLO: Segmenting Objects by Locations}} | X. Wang | doi | bib | arxiv2019 | インスタンスセグメンテーションを1-stageで |
+| {{|SOLOv2: Dynamic, Faster and Stronger}} | X. Wang | doi | bib | arxiv2020 | SOLOのv2 |
+| {{|Curved Voronoi Diagrams Consisting of Influence Areas with Differentiable Boundaries}} | Y. Matsumoto | doi | bib | ISVD2007 | 微分可能なボロノイ分割を考える |
+| {{|Interactive Region Segmentation for Manga}} | K. Ito | doi | bib | ICPR2016 | アルゴリズムベースの半自動セグメンテーション、漫画特化 |
+| {{|End-to-End Wireframe Parsing}} | Y. Zhou | doi | bib | ICCV2019 | 自然画像を線分と点のベクター表現に変換する手法 |
+| {{|A Novel Method for Vectorization}} | T. Birdal | doi | bib | arxiv 2014 | 画像のベクター化 |
+| {{|Deep Affinity Net: Instance Segmentation via Affinity}} | X. Xu | doi | bib | arxiv2020.03 | 大まかに連結成分を認識してインスタンスセグメンテーションをするっぽい |
+| {{|Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform}} | author | doi | bib | pub | エッジを使ったセグメンテーションで形状をいい感じにする |
+| {{|Conditional Random Fields as Recurrent Neural Networks}} | S. Zheng | doi | bib | ICCV2015 | CRF と RNN を使って CNN中でセグメンテーションを行う。 |
+
+  * [[https://www.slideshare.net/mmisono/instancesensitive-fully-convolutional-networks|インスタンスセグメンテーション スライド]]
+
+
+==== 対応点マッチング ====
+
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| Neural Best-Buddies: Sparse Cross-Domain Correspondence | K. Aberman | doi | bib | SIGGRAPH 2018 | [[https://arxiv.org/abs/1805.04140]]\\ CNNを使った特徴点マッチング |
+
+
+==== ポーズ変更・構造的画像生成 ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|Progressive Pose Attention Transfer for Person Image Generation}} | Z. Zhu | [[http://openaccess.thecvf.com/content_CVPR_2019/html/Zhu_Progressive_Pose_Attention_Transfer_for_Person_Image_Generation_CVPR_2019_paper.html|open access]] | bib | CVPR2019 | ProgressiveGAN & attention |
+| {{|Unsupervised Person Image Generation with Semantic Parsing Transformation}} | S. Song | [[http://openaccess.thecvf.com/content_CVPR_2019/html/Song_Unsupervised_Person_Image_Generation_With_Semantic_Parsing_Transformation_CVPR_2019_paper.html|open access]] | bib | CVPR2019 | semantic segmentation & cyclegan |
+| {{|Liquid Warping GAN: A Unified Framework for Human Motion Imitation, Appearance Transfer and Novel View Synthesis}} | W. Liu | [[https://arxiv.org/abs/1909.12224|arxiv]] | bib | ICCV2019 arXiv2019/09 | memo |
+| {{|PIFu: Pixel-Aligned Implicit Function for High-Resolution Clothed Human Digitization}} | S. Saito | doi | bib | ICCV2019 | 森島研 |
+| {{|Human Synthesis and Scene Compositing}} | M. Zanfir | [[https://arxiv.org/abs/1909.10307|arxiv]] | bib | arxiv2019 | memo |
+| {{|Poly-GAN: Multi-Conditioned GAN for Fashion Synthesis}} | N. Pandey | [[https://arxiv.org/abs/1909.02165|arxiv]] | bib | arxiv2019 | Virtual Try-On頑張る |
+| {{|Generating High-Resolution Fashion Model Images Wearing Custom Outfits}} | G. Yildirim | [[https://arxiv.org/abs/1908.08847|arxiv]] | bib | ICCVW 2019 | memo |
+| {{|Cycle In Cycle Generative Adversarial Networks for Keypoint-Guided Image Generation}} | H. Tang | [[https://arxiv.org/abs/1908.00999|arxiv]] | bib | ACM MM2019 | memo |
+| {{|Coordinate-based Texture Inpainting for Pose-Guided Image Generation}} | A. Grigorev | [[https://arxiv.org/abs/1811.11459|arxiv]] | bib | CVPR2019 | テクスチャマップに変換してそこからUNetにかけて再度マッピングし直す |
+| {{|Few-shot Video-to-Video Synthesis}} | T.C. Wang | doi | bib | NIPS2019 | NVIDIA おそらく最強 [[https://medium.com/@akichan_f/few-shot-video-to-video-synthesis-9413e5ed1214|解説]] |
+| {{|Few-Shot Unsupervised Image-to-Image Translation}} | M-Y. Liu | doi | bib | ICCV2019 | やってることに一番近い？ |
+
+| {{|Look into Person: Self-supervised Structure-sensitive Learning and A New Benchmark for Human Parsing}} | author | doi | bib | pub | songの手法で人間のセグメンテーションに利用している。\\ pose parser |
+| {{|First Order Motion Model for Image Animation}} | A. Siarohin | [[http://papers.nips.cc/paper/8935-first-order-motion-model-for-image-animation|nips]] | bib | NIPS2019 | DeformableGANのひとの最新作 |
+| {{|Deformable GANs for Pose-based Human Image Generation}} | A. Siarohin | doi | bib | CVPR2018 | Deformable-GAN |
+| {{|Pose Guided Person Image Generation}} | L. Ma | doi | bib | NIPS2017 | memo |
+| {{|ARCH: Animatable Reconstruction of Clothed Humans}} | Z. Huang | doi | bib | pub | 単一RGB画像からアニメーション可能な人物モデルを再構築、PIFu超え |
+| {{ |Attention-based Fusion for Multi-source Human Image Generation}} | S. Lathuiliere | doi | bib | WACV2020 | 複数入力でAttentionを使ったポーズ変換 |
+| {{|DwNet: Dense warp-based network for pose-guided human video generation}} | P. Zablotskaia | doi | bib | BMVC2019 | multi-sourceなポーズ変換のやつ\\ [[https://vision.cs.ubc.ca/datasets/fashion/|データセット]] |
+| {{|Deep Image Spatial Transformation for Person Image Generation}} | Y. Ren | doi | bib | CVPR2020 | Global Flow Local Attention での生成 SoTA? |
+| {{|The Creation and Detection of Deepfakes: A Survey}} | Y. Mirsky | doi | bib | arxiv2020 | 顔画像生成の網羅的サーベイ．狂気的な図の量．ポーズ変更にも使えそう． |
+| {{|Synthesizing Images of Humans in Unseen Poses}} | Balakrishnan | doi | bib | CVPR2018 | ポーズ変更，背景補完もする．同じ人物同じ背景でやるので非常に小さなポーズ変更にしか対応できないはず． |
+| {{|A Variational U-Net for Conditional Appearance and Shape Generation}} | P. Esser | doi | bib | CVPR2018 | VAE で形状生成？ |
+| {{|Human Pose Transfer by Adaptive Hierarchical Deformation}} | author | doi | bib | Pacific Graphics 2020 | memo |
+| {{|XingGAN for Person Image Generation}} | H. Tang | doi | bib | ECCV2020 | XinGAN ポーズ変更の SoTA? |
+
+  * michigan https://github.com/tzt101/MichiGAN SIGGRAPH2020
+
+==== データセット生成 ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|Meta-Sim}} | author | doi | bib | pub | データセットの自動生成．文法からグラフを生成．ノードのアトリビュートを書き換えるGCNを訓練．\\ グラフ形状は意外と学習に影響を与えないのか？ |
+| {{|Fully Differentiable Procedural Content Generation through Generative Playing Networks}} | bontrager | doi | bib | pub | プロシージャルなデータ生成を微分可能にして強化学習でできるようにした |
+
+
+==== 着色 ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|LazyBrush: Flexible Painting Tool for Hand-drawn Cartoons}} | D. Sy'kora | [[https://doi.org/10.1111/j.1467-8659.2009.01400.x|doi]] | bib | Eurographics2009 -> CGF | アルゴリズムで着色．グラフカットを用いてやる． |
+| {{|Scribbler: Controlling Deep Image Synthesis with Sketch and Color}} | P. Sangkloy | [[https://doi.org/10.1109/CVPR.2017.723|doi]] | bib | CVPR2017 | スクリブルによって条件付けた着色．ディープラーニング． |
+| {{|Real-time user-guided image colorization with learned deep priors}} | R. Zhang | [[https://doi.org/10.1145/3072959.3073703|doi]] | bib | SIGGRAPH2017 -> TOG2017 | 点によって条件付けた着色．ディープラーニング． |
+| {{|User-Guided Deep Anime Line Art Colorization with Conditional Adversarial Networks}} | Y. Ci | [[https://doi.org/10.1145/3240508.3240661|doi]] | bib | IEEE MM2018 | 最新の着色．あとで読む |
+| {{|Two-stage Sketch Colorization}} | L. Zhang | [[https://doi.org/10.1145/3272127.3275090|doi]] | bib | SIGGRAPH Asia 2018 -> TOG2018  | Style2paints V3 |
+| {{|Style Transfer for Anime Sketches with Enhanced Residual U-net and Auxiliary Classifier GAN}} | L. Zhang | [[https://doi.org/10.1109/ACPR.2017.61|doi]] [[https://arxiv.org/abs/1706.03319|arxiv]] | bib | ACPR2017 | Style2paints初期の自動着色 {{:article:zhang_arxiv2017.pdf|arxiv版}} |
+| {{|Temporal coherent image segmentation and its application}} | S. Zhang | doi | bib | なんか韓国の学会 | trapped-ball segmentation |
+| {{|Vectorizing Cartoon Animations}} | S. Zhang | [[https://doi.org/10.1109/TVCG.2009.9|doi]] | bib | TVCG2009 | セグメンテーション |
+| {{|Comicolorization: semi-automatic manga colorization}} | C. Furusawa | [[https://doi.org/10.1145/3145749.3149430|doi]] | bib | SIGGRAPH Asia 2017 Technical Brief | dwango |
+| {{|Separation of Manga Line Drawings and Screentones}} | K. Ito | [[http://dx.doi.org/10.2312/egsh.20151018|doi]] | bib | Eurographics 2015 short paper | 漫画のトーン除去 |
+| {{|Semantic Example Guided Image-to-Image Translation}} | J. Huang | [[https://arxiv.org/abs/1909.13028|arxiv]] | bib | arxiv2019 | 参照画像を使った着色 |
+| {{|Interactive Sketch & Fill: Multiclass Sketch-to-Image Translation}} | A. Ghosh | [[https://arxiv.org/abs/1909.11081|arxiv]] | bib | ICCV2019 | memo |
+| {{|A Superpixel-based Variational Model for Image　Colorization}} | F. Fang | doi | bib | TVCG2015 | スーパーピクセルを用いて白黒画像を着色する |
+
+
+
+==== 線画抽出・ベクター化 ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|Topology-driven vectorization of clean line drawings}} | author | doi | bib | TOG2013 | Disney Research トポロジーを考慮したベクター化 |
+| {{|Differentiable Vector Graphics Rasterization for Editing and Learning}} | Tzu-mao Li | doi | bib | SIGGRAPH Asia | neural renderでラスター画像をベクターに変換して SVG を出力． Adobe&MIT [[https://github.com/BachiLi/diffvg|github]] |
+| {{|Vectorization of Line Drawings via Polyvector Fields}} | author | doi | bib | TOG2019 | 線画のベクター化．SoTA？ |
+| {{ |XDoG: An eXtended difference-of-Gaussians compendium including advanced image stylization}} | author | doi | bib | pub | XDoG のこと Adobe 線画化 |
+| {{|StrokeStrip: Joint Parameterization and Fitting of Stroke Clusters}} | D. Mossel | doi | bib | SIGGRAPH2021 | ラフスケッチを線画に変換する手法。SoTAっぽい。[[https://www.youtube.com/watch?v=yjN6oKGIgI8|youtube]] |
+
+==== スタイル変換 ====
+
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|Multimodal Style Transfer via Graph Cuts}} | Y. Zhang | [[https://arxiv.org/abs/1904.04443|arxiv]] | bib | ICCV2019 | グラフカットで領域をクラスタリングして領域ごとに別のスタイル変換 [[http://blog.livedoor.jp/tak_tak0/archives/52422324.html|link]] |
+| {{|Deformable Style Transfer}} | S. Kim | doi | bib | arxiv2020.03 | 形状すらスタイル変換してしまえる。特徴点マッチング？ |
+| title | author | doi | bib | pub | memo |
+
+==== 3Dview ====
+
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|SynSin: End-to-end View Synthesis from a Single Image}} | O. Wiles | doi | bib | CVPR2020 | 1枚の画像から奥行き推定。3Dシーンの作成 |
+| {{|3D Photography using Context-aware Layered Depth Inpainting}} | M. Shih | doi | bib | CVPR2020 | 3D view にしてOcclusion後ろをinpainting |
+
+
+
+
+| {{|EdgeConnect: Generative Image Inpainting with Adversarial Edge Learning}} | K. Nazeri | doi | bib | ICCVW2019 | 線画推定と画像生成という二段階に分けた画像補完 |
+
+| {{|Semantic Segmentation for Line Drawing Vectorization Using Neural Networks}} | B. Kim | [[https://doi.org/10.1111/cgf.13365|doi]] | bib | Eurographics2018 -> CGF2018 | CNNとグラフカットでストローク分割 |
+
+
+==== アニメ・イラスト分析,アニメ変換 ====
+
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|Photo2clipart: image abstraction and vectorization using layered linear gradients}} | J. Favreau | [[https://doi.org/10.1145/3130800.3130888|doi]] | bib | SIGGRAPH Asia 2017 -> TOG | 絵や写真をレイヤー(構成要素)に分割する。ベクター表現に。 |
+| {{|Pose Estimation of Anime/Manga Characters: A Case for Synthetic Data}} | author | doi | bib | MANPU2016 | アニメ・イラストキャラクターにおけるポーズ推定 |
+| {{|Sketchformer: Transformer-based Representation for Sketched Structure}} | Ribeiro | doi | bib | CVPR2020 | 二つの線画の間をモーフィングさせる方法を推定する。中割に使えそう。 |
+| {{|A Class of C2 Interpolating Splines}} | C. Yuksel | [[https://doi.org/10.1145/3400301|doi]] | bib | SIGGRAPH 2020 | ベクター曲線の表現としてSoTA？ |
+| {{|Multiple Semantic Matching on Augmented N-Partite Graph for Object Co-Segmentation}} | Wang | doi | bib | ToIP2017 | 図形の対応マッチング？co-segmentation |
+| {{|The Animation Transformer: Visual Correspondence via Segment Matching}} | E. Casey | doi | bib | ICCV2021 | アニメの半自動着色。フレーム間で領域を対応付けるTransformer。中割にも活かせそう。 |
+| {{|Stylized line drawing of 3D models using CNN}} | M. Uchida | doi | bib | ICCW2019 | 線画に太さの強弱を付けるCNNの提案 |
+| {{|Hand-drawn animation with self-shaped canvas}} | M. Fujita | doi | bib | SIGGRAPH2017 poster | アニメ中割り用UIの作成。 |
+| {{|Stroke Correspondence by Labeling Closed Areas}} | R. Miyauchi | doi | bib | NICOGRAPH2021 | アニメ中割りに線の対応付けが必要なので領域の対応付けをベースに線の対応を付ける。 |
+| {{|Colorization of Line Drawings with Empty Pupils}} | author | doi | bib | PacificGraphics | アニメ顔画像の着色において目の着色が難しいので目の位置を推定してコピペすることでうまく着色。 |
+| {{|Confidence-aware Practical Anime-style Colorization}} | D. Ishii | doi | bib | SIGGRAPH2020 Talk | OLM アニメ自動着色論文 |
+
+  * Twin-GAN – Unpaired Cross-Domain Image Translation with Weight-Sharing GANs
+  * U-GAT-IT: Unsupervised Generative Attentional Networks with Adaptive Layer-Instance Normalization for Image-to-Image Translation
+  * SketchParse : Towards Rich Descriptions for Poorly Drawn Sketches using Multi-Task Hierarchical Deep Networks
+
+==== フレーム補間 ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|Depth-Aware Video Frame Interpolation}} | W. Bao | doi | bib | CVPR2019 | オクルージョン問題に取り組んだdeepのフレーム補間．DAIN-Appとして知られる．深度情報を推定してオクルージョン解決． |
+
+
+==== モーフィング・中割り ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|N‐way morphing for 2D animation}} | W. Baxter | [[https://doi.org/10.1002/cav.310|doi]] | bib | CASA2009 => CAV2009 | OLM．複数の画像からパラメトリックに変形可能なモーフィングを作る．人間によって対応点の入力が必要． |
+| {{|As-rigid-as-possible shape manipulation}} | T. Igarashi | [[https://doi.org/10.1145/1073204.1073323|doi]] |  | SIGGRAPH2005 => TOG2005 | 五十嵐先生．Adobeのパペットツール？ |
+| {{|Spatial keyframing for performance-driven animation}} | T. Igarashi | [[https://doi.org/10.1145/1281500.1281536|doi]] |  | SCA(SIGGRAPH Courses)2007 | 五十嵐先生 |
+| {{|Skin: a constructive approach to modeling free-form shapes}} | Markosian | [[https://doi.org/10.1145/311535.311595|doi]] |  | SIGGRAPH1999 | 輪郭から三角形のメッシュに分割する．五十嵐先生のAs-rigidはこれを使っている．細分割曲面を良くするために綺麗なメッシュを作る． |
+| {{|Triangle: Engineering a 2D Quality Mesh Generator and Delaunay Triangulator}} | Shewchuk | [[https://doi.org/10.1007/BFb0014497|doi]] |  | WACG1996 | メッシュ分割の別の手法．色々ある |
+| {{|Mesh optimization}} | H. Hoppe | [[https://doi.org/10.1145/166117.166119|doi]] | bib | SIGGRAPH1993 | メッシュをいい感じにする似ている手法． |
+| {{|Free–Form shape design using triangulated surfaces}} | W. Welch | [[https://doi.org/10.1145/192161.192216|doi]] | bib | SIGGRAPH1994 | メッシュをいい感じにする似ている手法． |
+| {{|Compatible Embedding for 2D Shape Animation}} | W. Baxter | [[https://doi.org/10.1109/TVCG.2009.38|doi]] | bib | pub | 2Dの形状に関してメッシュを作成する？ |
+| {{|Vector graphics animation with time-varying topology}} | B. Dalstein | [[https://doi.org/10.1145/2766913|doi]] | bib | SIGGRAPH2015 | VAC, 博士論文{{ :article:dalstein_phd2017.pdf |}} |
+| {{|Autocomplete hand-drawn animations}} | J. Xing | [[https://doi.org/10.1145/2816795.2818079|doi]] | bib | SIGGRAPH Asia 2015 => TOG2015 | 自動中割り．今最も読むべき論文！ |
+| {{|Globally optimal toon tracking}} | H. Zhu | [[https://doi.org/10.1145/2897824.2925872|doi]] | bib | SIGGRAPH2016 => TOG2016 | アニメの領域トラッキング |
+| {{|Context-Aware Computer Aided Inbetweening}} | W. Yang | [[https://doi.org/10.1109/TVCG.2017.2657511|doi]] | bib | TVCG2018 | [[:review:yang_tvcg2018|メモ]] CACAni ver2の中割？ |
+| {{|FTP-SC: Fuzzy Topology Preserving Stroke Correspondence}} | W. Yang | doi | bib | pub | memo |
+| {{|DiLight: Digital light table – Inbetweening for 2D animations using guidelines}} | L. Carvalho | doi | bib | Computer & Graphics | 中割の自動化 |
+
+
+==== 物体検出・テキスト検出 ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|M2Det: A Single-Shot Object Detector based on Multi-Level Feature Pyramid Network}} | Q. Zhao | [[https://arxiv.org/abs/1811.04533|arxiv]] | bib | AAAI2019 | 全体と細部の特徴を効果的に得られるようになった |
+| {{|EAST: An Efficient and Accurate Scene Text Detector}} | X. Zhou | doi | bib | CVPR2017 | EAST detector |
+| {{|Character Region Awareness for Text Detection}} | Y. Baek | doi | bib | CVPR2019 | Scene Text Detectionで日中韓語の誤魔化し無しSoTAっぽい？ LINE [[https://logmi.jp/tech/articles/322529|解説]] |
+| {{|Look More Than Once: An Accurate Detector for Text of Arbitrary Shapes}} | C. Zhang | doi | bib | CVPR2019 | シーンテキスト検出。曲がった形状でもベクター形式で文字列を抽出 |
+
+
+==== 物体追跡(トラッキング) ====
+^ タイトル ^ author ^ DOI ^ bib ^ pub ^ メモ ^
+| {{|MOTS: Multi-Object Tracking and Segmentation}} | Voigtlaender | doi | bib | CVPR2019 | 物体追跡とセグメンテーションを同時にやる |
+| {{|Segment as Points for Efficient Online Multi-Object Tracking and Segmentation}} | Z. Xu | doi | bib | ECCV2020 | PointTrack |
+
+
+  * [[http://itolab.is.ocha.ac.jp/~itot/paper/ItotPhD.pdf|博士論文]]
+
+
+  * [[http://openaccess.thecvf.com/CVPR2019_workshops/CVPR2019_Augmented_Human_Humancentric_Understanding_and_2D3D_Synthesis.py|CVPR2019全身画像生成関係]]
+
