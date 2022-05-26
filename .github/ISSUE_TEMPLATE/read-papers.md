@@ -7,22 +7,22 @@ assignees: Shinnosuke-Hara-8642
 
 ---
 
-### Authur
+### Authur 筆者
 
-### Motivation
+### Motivation なぜやろうとしたか
 
-### Method
+### Method 手法
 
-### Insight
+### Insight 結果
 
-### Contribution
+### Contribution 貢献の要約
 
 ***
 
-### Keyword
+### Keyword 新しいキーワードなど
 
-### Unknown
+### Unknown 何が今だ不明か
 
-### Reflection
+### Reflection 考察
 
-### Reference
+### Reference 関連研究
