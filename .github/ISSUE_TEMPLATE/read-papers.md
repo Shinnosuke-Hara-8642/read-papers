@@ -7,8 +7,6 @@ assignees: Shinnosuke-Hara-8642
 
 ---
 
-### Title
-
 ### Authur
 
 ### Motivation
